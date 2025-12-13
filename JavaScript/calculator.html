@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <style>
+        body
+         {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 
+        {
+            text-align: center;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box; 
+        }
+        .buttons 
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        button 
+        {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid #007BFF;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover 
+        {
+            background-color: #0056b3;
+        }
+        #hasilKalkulasi 
+        {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Kalkulator Sederhana</h1>
+
+    <input type="number" id="angka1" placeholder="Masukkan angka pertama">
+
+    <input type="number" id="angka2" placeholder="Masukkan angka kedua">
+
+    <div class="buttons">
+        <button onclick="tambah()">Tambah (+)</button>
+        <button onclick="kurang()">Kurang (-)</button>
+        <button onclick="kali()">Kali (×)</button>
+        <button onclick="bagi()">Bagi (÷)</button>
+    </div>
+
+    <p id="hasilKalkulasi">Hasil akan ditampilkan di sini</p>
+
+    <script src="calculator_script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Biodata dan Feedback</title>
+</head>
+<body>
+    <!-- Bagian Biodata -->
+    <h1>Biodata Saya</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Nama</th>
+            <td>Ayu Miftahul Ulum</td>
+        </tr>
+        <tr>
+            <th>Tempat/Tanggal Lahir</th>
+            <td>Banjarbaru, 01 Juli 2008</td>
+        </tr>
+        <tr>
+            <th>Alamat</th>
+            <td> JL. Prof. Moh Yamin NO.14, Kel Bogo, Kab Nganjuk</td>
+        </tr>
+        <tr>
+            <th>No. Telepon</th>
+            <td>0857 3564 9274</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Bagian Formulir Feedback -->
+    <h1>Formulir Feedback</h1>
+    <form action="#" method="post">
+        <!-- Input Nama -->
+        <label for="nama">nama :</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <!-- Input Email -->
+        <label for="email">Alamat Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Textarea Komentar -->
+        <label for="komentar">Komentar/Saran Anda:</label><br>
+        <textarea id="komentar" name="komentar" rows="4" cols="40"></textarea><br><br>
+
+        <!-- Radio Button -->
+        <p>Apakah Anda puas dengan materi ini?</p>
+        <input type="radio" id="puas_ya" name="puas" value="Ya" required>
+        <label for="puas_ya">Ya</label><br>
+        <input type="radio" id="puas_tidak" name="puas" value="Tidak">
+        <label for="puas_tidak">Tidak</label><br><br>
+
+        <!-- Checkbox -->
+        <p>Topik yang ingin dipelajari selanjutnya:</p>
+        <input type="checkbox" id="html" name="topik" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="topik" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="javascript" name="topik" value="JavaScript">
+        <label for="javascript">JavaScript</label><br><br>
+
+        <!-- Tombol Submit -->
+        <input type="submit" value="Kirim Feedback">
+    </form>
+</body>
+</html>
